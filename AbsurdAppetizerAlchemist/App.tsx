@@ -5,7 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from "react";
 import {registerRootComponent} from "expo";
 
-export function App() {
+export default function App() {
     const Stack = createNativeStackNavigator()
 
     return (
@@ -18,18 +18,6 @@ export function App() {
     );
 }
 
-// function Home({navigation}) {
-//     return (
-//         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-//             <Text>Home Screen</Text>
-//             <Button
-//                 title="Go to Ingredients"
-//                 onPress={() => navigation.navigate('Ingredients')}
-//             />
-//         </View>
-//     );
-// }
-
 
 const styles = StyleSheet.create({
     container: {
@@ -39,5 +27,3 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 });
-
-registerRootComponent(App)
